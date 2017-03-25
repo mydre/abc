@@ -8,5 +8,5 @@
 
 05.cpp  FBI树（二叉树的建立+后续遍历）
 
-06.cpp  星际交流
+06.cpp  星际交流（使用c++全排列函数next_permutation()）
 
