@@ -10,3 +10,4 @@
 
 06.cpp  星际交流（使用c++全排列函数next_permutation()）
 
+07.cpp  校门外的树（数组）
