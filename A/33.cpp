@@ -21,7 +21,7 @@ char ch[33];
 int main(){
 	cin>>ch;
 	int len=strlen(ch);
-	long long temp=0;/*使用的是long long型*/
+	int temp=0;/*int 型就行了*/
 	for(int i=0;i<len;i++){ 
 		if(ch[i]=='1'){
 			temp+=pow(2,len-1-i);//这里应当注意次数
