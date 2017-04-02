@@ -88,3 +88,5 @@
 
 45.cpp  猴子分苹果（递推 but only 90% was pass,because it was out of time）
 
+46.cpp  王、后传说
+
