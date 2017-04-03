@@ -15,7 +15,9 @@
 　　输入数据中每一个数的范围。
 　　例：n^m小于int 的表示范围。
 
-
+/*
+  可以利用递归+建表的方式，避免多次使用的时候造成超时
+*/
 #include<cstdio>
 #include<iostream>
 #include<algorithm>
