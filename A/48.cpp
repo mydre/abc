@@ -16,7 +16,9 @@
 　　Alice female 18 98
   
   
-  
+/*
+  共需进行n-1趟，每一趟一个最大（小）的数沉底，然后比较第二趟，比较第二趟的时候j也是从下标0开始的。
+*/  
 #include<cstdio>
 #include<iostream>
 #include<algorithm>
