@@ -44,9 +44,9 @@ struct Edges{
 }edges[300000];
 int N,M,inq[300000];
 long long d[300000];
-vector<int>G[300000];
+vector<int>G[300000];/*使用向量来保存每个点对应的多条边，直接push_back就行了*/
 queue<int>Q;
-void init(){
+void init(){/*关键是对边的操作，当操作每一条边的时候，点也同时被维护进去*/
 	int f,t;
 	long long di;
 	for(int i=0;i<M;i++){//i表示边的编号 
@@ -62,7 +62,7 @@ void bellford(){
 	inq[1]=1;
 	d[1]=0;
 	Q.push(1);
-	while(!Q.empty()){
+	while(!Q.empty()){/*和宽度优先遍历非常类似*/
 		int u=Q.front();Q.pop();
 		inq[u]=0;/*这一步一定要有，不然只能通过80%*/
 		for(int i=0;i<G[u].size();i++){/*这里求的不是所有的边，而是以u为出发点的边*/
