@@ -7,7 +7,7 @@ void quicksort(int *a,int n){
 	if(n>1){
 		while(flag1<flag2){
 			for(1;flag2>flag1;flag2--){
-			//1、通过flag2找到了比temp小的，赋值给flag1，这是flag2中渴望得到新的值 
+			//1、通过flag2找到了比temp小的，赋值给flag1，这时lag2中渴望得到新的值 
 			//2、通过flag2出发，没有找到比temp小的，则flag2走到了flag1，
 			//因为此时a[flag1]==temp,所以此时令a[falg1]=temp，并没有改变原数据的大小 
 				if(*(a+flag2)<temp){
