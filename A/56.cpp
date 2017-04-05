@@ -61,6 +61,7 @@ CPU消耗  < 1000ms
   4、可以先往右递归 
   5、最后一步进行返回值 
   6、不到达底部只需要判断条件（只需要按照策略进行递归  
+  7、因为只能向下和向右走，所以不需要加vis数组
 */
 #include<cstdio>
 #include<iostream>
@@ -107,7 +108,8 @@ int dfs(int x,int y,int num,int maxvalue){
 			t%=MOD;
 		}
 	}
-	return d[x][y][num][maxvalue+1]=t;
+	return d[x][y][num][maxvalue+1]=t;/*上面两个条件（if(x<N)和if(y<M)）相当于模拟其要走的路
+	，相当于for循环，模拟所有路径结束的时候再进行返回，而不是在每次都返回*/
 }
 int main(){
 	memset(d,-1,sizeof(d));
