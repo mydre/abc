@@ -75,7 +75,7 @@ void com(char *ca,int len){
 	for(int i=0;i<len;i++){
 		if(ca[i]!=' '){
 			int ans=0,k;
-			for(k=i;k<len&&ca[k]!=' ';k++){
+			for(k=i;k<len&&ca[k]!=' ';k++){/*重要，ca[k]!=' '，即把本身当做边界*/
 				ans=10*ans+ca[k]-'0';/*注意，非常巧妙，这里可以先乘10，再相加*/
 			}
 			A[tot++]=ans;
